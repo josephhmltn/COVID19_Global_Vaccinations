@@ -1,19 +1,21 @@
 # COVID-19 Global Vaccinations Dashboard
 
-## Project Goal
+🎯 **Project Goal**
 
-- Utilize **SQL** to query a dataset and extract insights into the **COVID-19 pandemic** on a global scale.
-- Create a **Tableau Dashboard** to visualize key metrics found within the dataset.
+- 📊 Utilize **SQL** to query a dataset and extract insights into the **COVID-19 pandemic** on a global scale.
+- 🌐 Create a **Tableau Dashboard** to visualize key metrics found within the dataset, offering a comprehensive view of the pandemic's impact worldwide.
 
-## Dataset Information
+📈 **Dataset Information**
 
-**Datasource:** [Our World in Data](https://ourworldindata.org/coronavirus)
+**Datasource:** [Our World in Data](https://ourworldindata.org/coronavirus) - A rich resource providing global data on COVID-19.
 
-*Date range used of 1/1/2020 to 3/30/2023
+*📅 Date range used: 1/1/2020 to 3/30/2023, covering the extensive period of the pandemic.
 
-## SQL Data Exploration of COVID-19 data
+🔍 **SQL Data Exploration of COVID-19 Data**
 
-### 1. Aggregating Cases and Deaths by Country/Region
+Diving deep into the data with SQL queries to uncover trends and patterns in the spread and impact of the virus.
+
+### 🌍 1. Aggregating Cases and Deaths by Country/Region
 
 ~~~~sql
 SELECT 	location, 
@@ -29,9 +31,9 @@ ORDER BY total_cases DESC;
 
 **Result Snapshot:**
 
-- Location: **United States of America**, Total Cases: **102,697,566**, Total Deaths: **1,117,054**
-- Location: **Japan**, Total Cases: **33,421,785**, Total Deaths: **73,747**
-- Location: **United Kingdom**, Total Cases: **24,286,411**, Total Deaths: **210,396**
+- Location: 🇺🇸 **United States**, Total Cases: **102,697,566**, Total Deaths: **1,117,054**
+- Location: 🇯🇵 **Japan**, Total Cases: **33,421,785**, Total Deaths: **73,747**
+- Location: 🇬🇧 **United Kingdom**, Total Cases: **24,286,411**, Total Deaths: **210,396**
 
 ### 2. Daily Trend Analysis
 
@@ -84,6 +86,6 @@ ORDER BY total_vaccinations DESC;
 
 **Results Snapshot**
 
-- Location: **China**, Total Vaccinations: **3,491,077,000**
-- Location: **United States**, Total Vaccinations: **673,465,377**
-- Location: 
+- Location: 🇨🇳 **China**, Total Vaccinations: **3,491,077,000**
+- Location: 🇺🇸 **United States**, Total Vaccinations: **673,465,377**
+- Location: 🇨🇦 **Canada**, Total Vaccinations: **96,956,502**
