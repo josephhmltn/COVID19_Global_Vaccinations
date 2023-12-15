@@ -15,6 +15,7 @@
 
 ### 1. Aggregating Cases and Deaths by Country/Region
 
+''' sql
 SELECT 	location, 
 		MAX(total_cases) AS total_cases, 
         MAX(total_deaths) AS total_deaths 
@@ -24,3 +25,4 @@ WHERE 	location NOT LIKE '%income%' AND
         (total_cases IS NOT NULL OR total_deaths IS NOT NULL) 
 GROUP BY location 
 ORDER BY total_cases DESC;
+'''
