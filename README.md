@@ -15,7 +15,7 @@
 
 Diving deep into the data with SQL queries to uncover trends and patterns in the spread and impact of the virus.
 
-### 🌍 1. Aggregating Cases and Deaths by Country/Region
+### 1. Aggregating Cases and Deaths by Country/Region
 
 ~~~~sql
 SELECT 	location, 
