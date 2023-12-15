@@ -43,3 +43,9 @@ HAVING daily_cases > 0 OR daily_deaths > 0
 ORDER BY date;
 ~~~~
 
+**Result Snapshot:**
+
+- **Date:** Wed Feb 12 2020, Daily Cases: **60,641**, Daily Deaths: **1,012**
+- **Date:** Fri Feb 12 2021, Daily Cases: **1715564**, Daily Deaths: **52,646**
+- **Date:** Sat Feb 12 2022, Daily Cases: **8326531**, Daily Deaths: **43,797**
+- **Date:** Sun Feb 12 2023, Daily Cases: **471139**, Daily Deaths: **3162**
