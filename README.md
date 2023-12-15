@@ -18,12 +18,12 @@ Diving deep into the data with SQL queries to uncover trends and patterns in the
 ### 1. Aggregating Cases and Deaths by Country/Region
 
 ~~~~sql
-SELECT 	location, 
-		MAX(total_cases) AS total_cases, 
+SELECT 	location,
+	MAX(total_cases) AS total_cases, 
         MAX(total_deaths) AS total_deaths 
 FROM `covid19_data.covid19-data` 
 WHERE 	location NOT LIKE '%income%' AND 
-		location NOT LIKE '%World%' AND 
+	location NOT LIKE '%World%' AND 
         (total_cases IS NOT NULL OR total_deaths IS NOT NULL) 
 GROUP BY location 
 ORDER BY total_cases DESC;
@@ -39,7 +39,7 @@ ORDER BY total_cases DESC;
 
 ~~~~sql
 SELECT 	date, 
-		SUM(new_cases) AS daily_cases, 
+	SUM(new_cases) AS daily_cases, 
     	SUM(new_deaths) AS daily_deaths 
 FROM `covid19_data.covid19-data` 
 GROUP BY date  
@@ -58,7 +58,7 @@ ORDER BY date;
 
 ~~~~sql
 SELECT 	EXTRACT(YEAR FROM date) AS year, 
-		SUM(new_cases) AS yearly_cases, 
+	SUM(new_cases) AS yearly_cases, 
         SUM(new_deaths) AS yearly_deaths 
 FROM `covid19_data.covid19-data` 
 WHERE continent IS NOT NULL 
@@ -75,10 +75,10 @@ ORDER BY year;
 
 ~~~~sql
 SELECT 	location, 
-		MAX(total_vaccinations) AS total_vaccinations 
+	MAX(total_vaccinations) AS total_vaccinations 
 FROM `covid19_data.covid19-data` 
 WHERE 	location NOT LIKE '%income%' AND 
-		location NOT LIKE '%World%' 
+	location NOT LIKE '%World%' 
 GROUP BY location 
 HAVING total_vaccinations > 0 
 ORDER BY total_vaccinations DESC;
