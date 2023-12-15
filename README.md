@@ -2,13 +2,13 @@
 
 ## Project Goal
 
-- Utilize **SQL** to query a dataset and extract insights into the **COVID
+- Utilize **SQL** to query a dataset and extract insights into the **COVID-19 pandemic** on a global scale.
+- Create a **Tableau Dashboard** to visualize key metrics found within the dataset.
 
-## Dataset
+## Dataset Information
 
 Datasource: [Our World in Data](https://ourworldindata.org/coronavirus)
 *Date range used of 1/1/2020 to 3/30/2023
 
-**12/12/2023 - Deleted my local .sql backup so will have to recreate from scratch when I can**
+## SQL Data Exploration of COVID-19 data
 
-**Updated README file with summary of project coming soon**
