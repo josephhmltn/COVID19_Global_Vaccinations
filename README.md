@@ -68,3 +68,22 @@ ORDER BY year;
 
 - Year: **2020**, Yearly Cases: **82,946,139**, Yearly Deaths: **1,928,665**
 - Year: **2021**, Yearly Cases: **204,181,293**, Yearly Deaths: **3,522,324**
+
+### 4. Total Vaccinations by Location
+
+~~~~sql
+SELECT 	location, 
+		MAX(total_vaccinations) AS total_vaccinations 
+FROM `covid19_data.covid19-data` 
+WHERE 	location NOT LIKE '%income%' AND 
+		location NOT LIKE '%World%' 
+GROUP BY location 
+HAVING total_vaccinations > 0 
+ORDER BY total_vaccinations DESC;
+~~~~
+
+**Results Snapshot**
+
+- Location: **China**, Total Vaccinations: **3,491,077,000**
+- Location: **United States**, Total Vaccinations: **673,465,377**
+- Location: 
