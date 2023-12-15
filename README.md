@@ -36,8 +36,10 @@ ORDER BY total_cases DESC;
 ### 2. Trend Analysis
 
 ~~~~sql
-SELECT date, SUM(new_cases) AS daily_cases, SUM(new_deaths) AS daily_deaths 
-FROM `covid19_data.covid19-data` 
+SELECT 	date, 
+		SUM(new_cases) AS daily_cases, 
+    	SUM(new_deaths) AS daily_deaths 
+FROM 	`covid19_data.covid19-data` 
 GROUP BY date  
 HAVING daily_cases > 0 OR daily_deaths > 0 
 ORDER BY date;
