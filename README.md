@@ -2,6 +2,7 @@
 
 ## 🎯 **Project Goal**
 
+- 🔗 Establish and link to a BigQuery dataset.
 - 📊 Utilize **SQL** to query a dataset and extract insights into the **COVID-19 pandemic** on a global scale.
 - 🌐 Create a **Tableau Dashboard** to visualize key metrics found within the dataset, offering a comprehensive view of the pandemic's impact worldwide.
 
