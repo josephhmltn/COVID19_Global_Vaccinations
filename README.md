@@ -9,7 +9,7 @@
 
 **Datasource:** [Our World in Data](https://ourworldindata.org/coronavirus) - A rich resource providing global data on COVID-19.
 
-*📅 Date range used: 1/1/2020 to 3/30/2023, covering the extensive period of the pandemic.
+*📅 Date range used: 1/3/2020 to 3/30/2023, covering the extensive period of the pandemic.
 
 ## 🔍 **SQL Data Exploration of COVID-19 Data**
 
